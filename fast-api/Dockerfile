@@ -1,8 +1,8 @@
-FROM --platform=linux/amd64 python:3.12.0-alpine
+FROM --platform=linux/amd64 python:3.11.0-alpine
 
 WORKDIR /fastapi/
 
-COPY main.py /fastapi/
+COPY app/ /fastapi/
 COPY requirements.txt /fastapi/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
