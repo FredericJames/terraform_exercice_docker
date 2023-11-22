@@ -16,8 +16,7 @@ def predict_custom_trained_model_sample(
     api_endpoint: str = "us-east1-aiplatform.googleapis.com",
 ) -> Response:
     """
-    `instances` can be either single instance of type dict or a list
-    of instances.
+        payload: json payload used to call the model
     """
     
     client_options = {"api_endpoint": api_endpoint}
